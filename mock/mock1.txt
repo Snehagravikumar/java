@@ -1,0 +1,149 @@
+1. *Java is object orintend,platform indenpent ,secure,robust programming language.
+  *It is used to develope the application using API.
+  *java and javac are the tools that is used excuete the programs.
+  * Using javac(java Compiler) we complie the source code that will convert to byte code.
+  * and java is extension given to to source code when compling code and it is used to run the byte code.
+
+
+2. *JDK is the java development kit.
+jdk is used to write  and exceute the code.
+And it contains tools and JRE.
+
+*JRE is the Java Runtime Environment.
+It is used to Exceute only.
+JRE contains the libraries and JVM.
+
+*JVM is Java Virtual Machine.
+it is used to exceute byte code.
+JVM is java dependent.
+
+3. .java file contains source code and it is used as extension in source code.
+   .class file contains byte code and we can run this on any platform.
+
+4. java IDE's 
+   *Development Interface
+   *platform Independent
+   *Runtime Environment  
+  
+
+5.*Variable are used to Store the data .variable are type class level and method level.
+  Class level have static and non-static variables.
+eg: static String tarffic;//static variable
+    String traffic; //non-static variable
+ Method level have local and parameter variales.local variables are declared inside the method and parameter variable are declared within the method paranthesis.
+  eg: void main()
+  {
+ String name;//local
+  }
+
+  void main(int number)//parameter
+   {
+
+   }
+
+6.Object Oriented Programming means the java Independent langauge and the take real world entities by state and behaviour of those object.
+
+7. error
+
+8.data type is attribute that contains predefined types. and used to store the information in the specific type.
+  data types 
+Primitive datatypes
+  * int 
+eg: int number;//0
+  * float
+eg: float number;//0.0
+  * char 
+ eg: char size; space
+  * double 
+eg: double size; 0.0
+  * boolean
+eg: boolean type; trur/false
+  * short
+  * long 
+
+Non-primitive datatypes
+String 
+array
+and class name
+
+9.Dot operator used to access variables and method.
+    
+
+10.Java Features
+ *Polymorphism
+ *Encapsulation
+ *Abstraction
+ *Inheritance
+
+11.  Array is sequentail collection of similar data values or homogenous values.
+and array is non primitive data type
+   eg: String[] cities={"banglore","Mysore","hasan","davanagere"};
+
+12.*class is keyword and non-primitive data type.
+ And store the state and behaviour of real world objects.
+ *object is instance of class.
+
+13. keywords are reserved values in java.
+   1.new,class,public
+   2.static
+   3.break
+   4.this
+   5.throw
+   6.finally
+   7.default
+   8.case
+   9.switch
+   10.import
+eg: class Keywords
+{
+  static int value;
+public static void main(String[] args)
+{
+System.out.println("keywords");
+}
+}
+
+14.Constructor is special method and it has same as class name .
+ constructor do not have return type and use only new keyword.
+ consturctor intialize the variables.
+ type of constructor 
+ 1.defalut constructor
+ 2.parameteraized constructor
+
+15.static give single copy and it is non-access specifier the main method becomes static.
+   *implicit : we can directly give argument to called method.  
+   *explicit : we can call method in decalred variable and that variable name will be passed as argument.
+
+16. class Program
+{
+  int numbers[]={12,3,2,45,6,7,6}
+
+  System.out.println("Total lenth of array is");
+
+ for (int i=0;i<=numbers.length;i++)
+{
+System.out.println(number[i]);
+}
+}
+
+17.Method is set statements.
+ Method overloading is class have multiple method of same name with diffent parameter.
+ eg: class Method
+{
+   static int add(int no, int cost)
+{
+}
+static int add(int no, int cost ,int regno)
+{
+}
+public static void main(String[] args)
+{
+System.out.println(Method.add(23,60));
+ System.out.println(Method.add(23,60,104));  
+}
+}
+
+
+
+
+

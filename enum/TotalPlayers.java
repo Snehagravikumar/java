@@ -1,0 +1,4 @@
+enum TotalPlayers
+{
+   SNEHA,HITHAN;
+}

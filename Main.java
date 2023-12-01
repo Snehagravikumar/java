@@ -1,96 +1,45 @@
+package com.AS.Method;
+
 public class Main {
-    public static void main(String[] args) {
-        Rice rice =new Rice();
-        rice.setRice("white","rectangle","good");
-        System.out.println(rice);
-        String ref=rice.toString();
-        int ref1=rice.hashCode();
-        Object obj=new Rice();
-         obj.toString();
-         obj.hashCode();
+    public static void main(String[] args)
+    {
+        Guitor gui=new Guitor(1,3000,"wood");
+        Guitor gui1=new Guitor(2,4000,"metal");
+        Guitor gui2=new Guitor(1,3000,"wood");
 
-        System.out.println("==============================");
+        boolean ref=gui.equals(gui2);
+        System.out.println("Guitor is equal to Guitor 1 :"+ref);
 
-        Bowl bowl=new Bowl();
-        bowl.toUse("Square",200,20);
-        System.out.println("Cost :"+bowl.cost);
-        System.out.println("Shape :"+bowl.shape);
-        System.out.println("Size :"+bowl.size);
-        System.out.println(bowl);
-        System.out.println(bowl.hashCode());
-        Object obj1=new Bowl();
+        System.out.println("===================================");
 
-        System.out.println("==============================");
+        WifiDongel wifi=new WifiDongel("intel",200,20);
+        WifiDongel wifi1=new WifiDongel("hp",300,40);
 
-        Chain chain=new Chain();
-        Object obj2= new Chain();
-        chain.design="link";
-        chain.size=7;
-        chain.cost=50000;
-        System.out.println(chain);
-        System.out.println(chain.hashCode());
-        System.out.println(obj2);
-        System.out.println(obj2.hashCode());
+        boolean ref1=wifi.equals(wifi1);
+        System.out.println("WifiDongel is equal to WifiDongel 1 :"+ref1);
 
-        System.out.println("==============================");
+        System.out.println("===================================");
 
-        Basket basket =new Basket();
-        rice.setRice("white","rectangle","good");
-        System.out.println(rice);
-        String basket1=basket.toString();
-        int basket2=basket.hashCode();
-        Object obj4=new Rice();
-        obj.toString();
-        obj.hashCode();
+        USBHub usb=new USBHub(3,300,2000);
+        USBHub usb1=new USBHub(2,400,6000);
+        USBHub usb2=new USBHub(3,300,2000);
+        USBHub usb3=new USBHub(2,400,6000);
 
-        System.out.println("==============================");
+        boolean ref4=usb.equals(usb1);
+        System.out.println("USB and USB1 are Equal :"+ref4);
+        System.out.println("------------------------");
+        boolean ref5=usb.equals(null);
+        System.out.println("USB and NULL are Equal :"+ref4);
+        System.out.println("------------------------");
+        boolean ref6=usb.equals(usb3);
+        System.out.println("USB and USB3 are Equal :"+ref4);
+        System.out.println("------------------------");
+        boolean ref7=usb1.equals(usb3);
+        System.out.println("USB1 and USB3 are Equal :"+ref4);
 
-        Bucket bucket=new Bucket();
-        bucket.setUse("Square",200,20);
-        System.out.println("Cost :"+bucket.cost);
-        System.out.println("Shape :"+bucket.shape);
-        System.out.println("Size :"+bucket.size);
-        System.out.println(bucket);
-        System.out.println(bucket.hashCode());
-        Object obj5=new Bucket();
 
-        System.out.println("==============================");
 
-        Spoon spoon=new Spoon();
-        spoon.toFeed("Steel",150,10);
-        System.out.println("Cost :"+spoon.cost);
-        System.out.println("Shape :"+spoon.meterial);
-        System.out.println("Size :"+spoon.noOfSpoon);
-        System.out.println(spoon);
-        System.out.println(spoon.hashCode());
-        Object obj6=new Spoon();
 
-        System.out.println("==============================");
-
-        Money money=new Money();
-        money.moneyUse("Eduaction");
-        System.out.println("Cost :"+money.type);
-        System.out.println("Shape :"+money.moneyFor);
-        System.out.println("Size :"+money.moneyInCrore);
-        System.out.println(spoon);
-        System.out.println(spoon.hashCode());
-        Object obj7=new Money();
-
-        System.out.println("==============================");
-
-        Geyser gey=new Geyser();
-        gey.toHeat("new",3000,3);
-        System.out.println(gey.toString());
-        System.out.println( gey.hashCode());
-        Object obj8=new Money();
-
-        System.out.println("==============================");
-
-        Bandli band=new Bandli();
-        band.toFry("Circle",400,"iron");
-        System.out.println( band.toString());
-        System.out.println( band.hashCode());
-        Object obj9=new Bandli();
 
     }
 }
